@@ -4,7 +4,41 @@
     One Web | Home
 {% endblock %}
 
-{% block body_block %}
-    <h1> Welcome To One Web.</h1>
-    <h3>Everything you need is right here in one place.</h3>
+{% block content_block %}
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <table class="table table-bordered table-sm">
+                <thead class="thead-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Home</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Sanjit</td>
+                    <td>24</td>
+                    <td>Bagerhat</td>
+                </tr>
+                <tr>
+                    <td>Dipu</td>
+                    <td>19</td>
+                    <td>Khulna</td>
+                </tr>
+                <tr>
+                    <td>Biplob</td>
+                    <td>23</td>
+                    <td>Dhaka</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
 {% endblock %}
