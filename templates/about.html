@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About | OneWeb
+{% endblock %}
+
+
+{% block content_block %}
+
+    <div class="jumbotron">
+        <p class="h1 d-flex justify-content-center">About Developer</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+
+            <div class="">
+                <img class="img-fluid rounded float-left" src="{% static 'images/sa.jpg' %}"/>
+            </div>
+
+        </div>
+
+        <div class="col-sm-9">
+
+            <div class="text-left">
+                <p class="h2">Sanjit Majumdar</p>
+                <p class="h5">B.Sc in Computer Science & Engineering from BSMRSTU.</p>
+                <p class="text-left mt-2 justify-content-md-start">
+                    I am a computer programmer and web developer. I have worked with popular programming
+                    languages like <strong>C/C++, Python, Java, C#, PHP and JavaScript</strong>. I started to learn
+                    programming when I was in 1st semester. I started by learning C language, one of the most
+                    powerful programming languages till now. Then I moved to C++ and Object oriented programming.
+                    After getting a taste of OOP and seeing how great it was I moved to Java which
+                    is a pure object oriented language. But everything changed after I got myself into python.
+                    When I started to learn python I saw that it is one of the most powerful and yet easy language
+                    to learn. Then I devoted myself in learning most of python. Python has one of the most popular
+                    web framework <strong>Django</strong>. I have developed this site using Django. Python has the best
+                    libraries for machine learning. I want to work on machine learning in the future.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row ml-1 mr-1 mt-5">
+        <table class="table border-dark">
+            <thead class="bg-light">
+            <tr>
+                <th>Social Site Name</th>
+                <th>Link</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Facebook</td>
+                <td><a href="https://www.facebook.com/sanjit.majumdar.56">Sanjit Majumdar</a></td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td><a href="https://www.twitter.com/biplojit12">Sanjit Majumdar</a></td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/sanjit.majumdar">Sanjit Majumdar</a></td>
+            </tr>
+            <tr>
+                <td>Stack Overflow</td>
+                <td><a href="https://www.stackoverflow.com/sanjit.majumdar">Sanjit Majumdar</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
