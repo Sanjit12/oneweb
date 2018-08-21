@@ -30,30 +30,41 @@
 
 {# Navigation start #}
 <nav class="navbar navbar-expand-sm navbar-light bg-light ow-navbar">
-        <a class="navbar-brand" href="/">OneWeb</a>
+    <a class="navbar-brand" href="/">OneWeb</a>
 
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav mr-auto ml-2">
+    <div class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto ml-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav mr-5">
+            {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">{{ user.username }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Logout</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav mr-5">
+            {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sign Up</a>
                 </li>
-            </ul>
-        </div>
-    </nav>
+            {% endif %}
+        </ul>
+
+    </div>
+</nav>
 {# Navigation end #}
 
 {# Content start #}
