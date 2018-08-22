@@ -7,10 +7,9 @@
 {% block content_block %}
 
     {% if user.is_authenticated %}
-        <h1> Hi {{ user.username }}!</h1>
+        <h1 class="text-center"> Hi {{ user.username }}!</h1>
     {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
+        <h2 class="page-header text-center">You are not logged in</h2>
     {% endif %}
 
 {% endblock %}
