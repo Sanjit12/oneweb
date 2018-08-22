@@ -25,8 +25,9 @@
 
         {% endblock %}
     </title>
+
 </head>
-<body>
+<body class="body">
 
 {# Navigation start #}
 <nav class="navbar navbar-expand-sm navbar-light bg-light ow-navbar">
@@ -68,7 +69,7 @@
 {# Navigation end #}
 
 {# Content start #}
-<div class="container-fluid">
+<div class="container-fluid main-content">
 
     {% block content_block %}
 
@@ -76,6 +77,154 @@
 
 </div>
 {# Content end #}
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #d3d3d3;">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-twitter white-text"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-google-plus-g white-text"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-linkedin-in white-text"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-instagram white-text"> </i>
+                    </a>
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-github white-text"> </i>
+                    </a>
+                    <a class="btn btn-lg" href="#">
+                        <i class="fab fa-stack-overflow white-text"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left bg-light pt-5">
+
+        <!-- Grid row -->
+        <div class="row dark-grey-text">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                <!-- Content -->
+                <h6 class="text-dark font-weight-bold">OneWeb</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>One Web allows you to connect with super talented people who can help you and guide you
+                with your works. We are on the verge of a new era of developers.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Work On</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">Python</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Django</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Java & Spring</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">C/C++</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="#!">Your Account</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Affiliate</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="#!">Help</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fa fa-home mr-3"></i>Motijheel, Dhaka, Bangladesh</p>
+                <p>
+                    <i class="fa fa-envelope mr-3"></i> sanjit.dev@oneweb.com</p>
+                <p>
+                    <i class="fa fa-phone mr-3"></i> +8801785577999</p>
+                <p>
+                    <i class="fa fa-mobile mr-3"></i>  +8801785577555</p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 bg-secondary text-white">
+        &copy; Copyright 2018 OneWeb Ltd. - All Rights Reserved
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </body>
 </html>
